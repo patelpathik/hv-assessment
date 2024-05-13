@@ -1,4 +1,5 @@
 import express, { Express, Request, Response } from 'express'
+import router from './app/router/router'
 
 import { configDotenv } from 'dotenv'
 
@@ -18,3 +19,5 @@ app.get('/', (req: Request, res: Response) => {
 app.listen(PORT, () => {
   console.log(`Server is running at port ${PORT} ${new Date().getTime()}`)
 })
+
+app.use('/', router)
