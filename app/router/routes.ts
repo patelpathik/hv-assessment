@@ -1,5 +1,6 @@
 const routes = {
-  pincode: '/pincode'
+  pincode: '/pincode',
+  cloudSync: '/cloud-sync'
 }
 
 export default routes
